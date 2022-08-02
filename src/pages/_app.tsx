@@ -5,16 +5,13 @@ import Layout from '@/components/layouts/main';
 
 function Website({ Component, pageProps, router }: AppProps) {
   return (
-    <div style={{ backgroundColor: '#14222B' }}>
-      <ChakraProvider>
-        <Layout router={router}>
-          <Component {...pageProps} key={router.route} />
-        </Layout>
-      </ChakraProvider>
-    </div>
+    <ChakraProvider>
+      <Layout router={router}>
+        <Component {...pageProps} key={router.route} />
+      </Layout>
+    </ChakraProvider>
   );
 }
 
 // TODO:routerとは？
-
 export default Website;
