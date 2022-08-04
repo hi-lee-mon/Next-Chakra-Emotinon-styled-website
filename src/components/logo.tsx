@@ -19,8 +19,9 @@ const LogBox = styled.span`
 `;
 
 const Logo = () => {
-  const footPrintImg = `/speed_slow_turtle${useColorModeValue('', '-dark')}.png`;
-  console.log(footPrintImg);
+  // TIPS:画像の切り替えは以下のように行う。
+  // const footPrintImg = `/speed_slow_turtle${useColorModeValue('', '-dark')}.png`;
+  const footPrintImg = `/speed_slow_turtle${useColorModeValue('', '')}.png`;
   return (
     <div>
       <Link href='/'>

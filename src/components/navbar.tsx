@@ -3,6 +3,7 @@ import { Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, Menu
 import NextLink from 'next/link';
 import React from 'react';
 import Logo from './logo';
+import ThemeToggleButton from './themeToggleButton';
 
 type LinkItemProps = {
   href: string;
@@ -59,6 +60,7 @@ const Navbar = (props: NavbarProps) => {
           </LinkItem>
         </Stack>
         <Flex flex={1} justifyContent='flex-end'>
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label='Options' />
