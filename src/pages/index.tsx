@@ -1,6 +1,7 @@
 import { Box, Container, Flex, Heading, Image, useColorModeValue } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Section from '@/components/section';
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +35,12 @@ const Home: NextPage = () => {
             />
           </Flex>
         </Box>
+        <Section delay={'0.1s'}>
+          <Heading as='h3' variant='section-title'>
+            Work
+          </Heading>
+          <p>Paragraph</p>
+        </Section>
       </Container>
     </div>
   );
