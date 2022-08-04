@@ -1,4 +1,4 @@
-import { Box, Container, Heading } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Image, useColorModeValue } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
-        <Box borderRadius='lg' bg='red' p='3' mb='6' alignItems='center'>
+        <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p='3' mb='6' alignItems='center'>
           Hello, I&apos;m a full-stack developer based in Japan!
         </Box>
         <Box display={{ md: 'flex' }}>
@@ -21,6 +21,18 @@ const Home: NextPage = () => {
             </Heading>
             <p>Digital Craftzman (Artist / Developer / Designer)</p>
           </Box>
+          <Flex flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} justifyContent={'center'}>
+            <Image
+              borderColor='whiteAlpha.800'
+              borderWidth={2}
+              borderStyle='solid'
+              maxWidth='100px'
+              display='inline-block'
+              borderRadius='full'
+              src='image/IMG_4331.JPG'
+              alt='Profile Image'
+            />
+          </Flex>
         </Box>
       </Container>
     </div>
