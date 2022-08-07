@@ -4,7 +4,7 @@ import { Router } from 'next/router';
 import Navbar from '../navbar';
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
   router: Router;
 };
 

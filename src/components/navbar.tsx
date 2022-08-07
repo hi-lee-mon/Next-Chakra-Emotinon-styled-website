@@ -16,7 +16,7 @@ const LinkItem = ({ href, path, children }: LinkItemProps) => {
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpah.900');
   return (
     <NextLink href={href}>
-      <Link p={2} bg={active ? '#202023' : inactiveColor}>
+      <Link p={2} bg={active ? '#70afcc' : inactiveColor}>
         {children}
       </Link>
     </NextLink>
@@ -44,6 +44,7 @@ const Navbar = (props: NavbarProps) => {
             <Logo />
           </Heading>
         </Flex>
+        {/* PCサイズ */}
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -59,6 +60,7 @@ const Navbar = (props: NavbarProps) => {
             Posts
           </LinkItem>
         </Stack>
+        {/* SPサイズ */}
         <Flex flex={1} justifyContent='flex-end'>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

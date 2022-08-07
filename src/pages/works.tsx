@@ -17,7 +17,7 @@ const Works = () => {
             ad autem nisi quasi quas, obcaecati porro quam explicabo minima sunt accusamus!
           </WorkGridItem>
         </Section>
-        <Section delay='0.2s'>
+        <Section delay='0.1s'>
           <WorkGridItem id='walknote' title='Walknote' thumbnail={thumbWalknote}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda sequi earum itaque, unde iste debitis blanditiis architecto, sunt
             animi quisquam soluta, eius eaque aliquid explicabo ipsa rerum velit voluptates.
