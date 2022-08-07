@@ -21,7 +21,7 @@ const StyledDiv = chakra(motion.div, {
 
 type Props = {
   children: ReactNode;
-  delay: string;
+  delay?: string;
 };
 const Section = ({ children, delay = '0s' }: Props) => (
   <StyledDiv
