@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import { WorkGridItem } from '@/components/gridItem';
 import Layout from '@/components/layouts/article';
 import Section from '@/components/section';
@@ -7,12 +7,12 @@ import thumbInkdrop from 'public/image/dongsh-a6fr5ynh_E0-unsplash.jpg';
 
 const Works = () => {
   return (
-    <Layout>
+    <Layout title='works'>
       <Container>
         <Heading as='h3' fontSize={20} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 2, 3]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id='inkdrop' title='Inkdrop' thumbnail={thumbInkdrop}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, error alias. Exercitationem, nihil nesciunt ipsum similique id

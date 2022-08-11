@@ -2,6 +2,8 @@ import { Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
 import { Router } from 'next/router';
 import Navbar from '../navbar';
+import NoSsr from '../noSsr';
+import VoxelDog from '../vaxelDog';
 
 type Props = {
   children: React.ReactNode;
@@ -17,6 +19,9 @@ const Main = ({ children, router }: Props) => {
       </Head>
       <Navbar path={router.asPath} />
       <Container maxW='container.md' pt={14}>
+        <NoSsr>
+          <VoxelDog />
+        </NoSsr>
         {children}
       </Container>
     </Box>

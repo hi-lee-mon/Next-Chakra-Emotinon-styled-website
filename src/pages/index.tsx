@@ -9,7 +9,7 @@ import Section from '@/components/section';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout title='home'>
       <Container>
         <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p='3' mb='6' alignItems='center'>
           Hello, I&apos;m a full-stack developer based in Japan!
