@@ -73,7 +73,7 @@ const Navbar = (props: NavbarProps) => {
                 <NextLink href='/works' passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href='/Posts' passHref>
+                <NextLink href='/posts' passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href='/google.com'>

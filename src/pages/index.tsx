@@ -1,7 +1,8 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Container, Flex, Heading, Image, useColorModeValue, Link, Button } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Image, useColorModeValue, Link, Button, List, ListItem, Icon } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import NextLink from 'next/link';
+import { IoLogoGithub } from 'react-icons/io5';
 import { BioSection, BioYear } from '@/components/bio';
 import Layout from '@/components/layouts/article';
 import Paragraph from '@/components/paragraph';
@@ -83,6 +84,20 @@ const Home: NextPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto sapiente tempora blanditiis ad fugiat necessitatibus iste
             corrupti laudantium excepturi doloribus deleniti aliquam voluptate delectus, illum commodi vel deserunt eveniet!
           </Paragraph>
+        </Section>
+        <Section delay='0.3s'>
+          <Heading as='h3' variant='section-title'>
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href='' target='_blank'>
+                <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoGithub} />}>
+                  @craftzdog
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
