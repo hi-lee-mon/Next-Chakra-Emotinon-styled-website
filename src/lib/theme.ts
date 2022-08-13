@@ -3,7 +3,7 @@ import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
 import { Dict } from '@chakra-ui/utils';
 
 const styles = {
-  global: (props: StyleFunctionProps | Dict) => ({
+  global: (props: Dict | StyleFunctionProps) => ({
     body: {
       bg: mode('#f0e7db', '#202023')(props),
     },
@@ -25,8 +25,8 @@ const components = {
     },
   },
   Link: {
-    baseStyle: (props: StyleFunctionProps | Dict) => ({
-      color: mode('#000', '#fff')(props),
+    baseStyle: (props: Dict | StyleFunctionProps) => ({
+      color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3,
     }),
   },
@@ -37,7 +37,7 @@ const fonts = {
 };
 
 const colors = {
-  glassTeal: '#88ccca',
+  grassTeal: '#88ccca',
 };
 
 const config = {
@@ -45,12 +45,5 @@ const config = {
   useSystemColorMode: true,
 };
 
-const theme = extendTheme({
-  config,
-  styles,
-  components,
-  colors,
-  fonts,
-});
-
+const theme = extendTheme({ config, styles, components, fonts, colors });
 export default theme;
